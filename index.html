@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html>
+    <!-- Elément head : instructions envoyées au navigateur -->
+    <head>
+        <meta charset="utf-8">
+
+        <title>Découvrir le HTML</title>
+
+        <link href="./assets/css/styles.css" rel="stylesheet">
+
+        <!--load icomoon styles-->
+        <link href="./assets/css/style.css" rel="stylesheet">
+
+    </head>
+
+    <!--
+        Element body : contenu visible dans la fenêtre du navigateur
+        Le contenu sera traité et affiché par le navigateur
+    -->
+    <body>
+        <header>
+  
+            <h1>Découvrir le HTML</h1>
+
+            <p>
+                L'histoire du 
+                <!--
+                    abbr avec l'attribut title pour donner la signification
+                    de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language)
+                -->
+                <abbr title="Hyper Text Markup Language" class="dropdown">HTML</abbr>
+                à travers les âges
+            </p>
+
+            <nav class="bg-dark"><!-- Element qui regroupe des balises de navigation -->
+                <ul class="flex-container"><!-- Conteneur de liste-->
+                    <!-- Lien interne vers une section-->
+                    <li>
+                        <a class="btn bg-dark" href="#section-html" title="HTML la référence">
+                            <span class="icon-html-five"></span> HTML
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn bg-dark" href="#section-css" title="CSS la référence">
+                            <span class="icon-css3" ></span> CSS
+                        </a>
+                    </li>
+                    <!-- Lien externe vers un autre site -->
+                    <!-- Fermer la ligne Nos réseaux sociaux -->
+
+                    <!-- Lien de type téléphone /!\ never this way -->
+                    <li>
+                        <a class="btn bg-dark" href="tel:0522336699" title="Click to call">
+                            Appelez nous
+                        </a>
+                    </li>
+
+                    <!-- Lien de type mail /!\ never this way -->
+                    <li>
+                        <a 
+                           class="btn bg-dark" href="mailto:toto@tartempion.com?subject=Contact us" 
+                            title="Send an email"
+                        >
+                            Mail
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main><!-- Contenu principal d'une page / unique dans un document -->
+            <section id="section-html">
+                <header>
+                    <h2>Le langage HTML</h2>
+                    <p>
+                        Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
+                        <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
+                        
+                    </p>
+                </header>
+
+                <article>
+                    <header>
+                        <h3>Deux familles de balises HTML</h3>
+                    </header>
+                    <p>
+                        Les <span>balises bloc</span> définissent un rectangle occupant
+                        la totalité de la largeur disponible dans le navigateur. <br>
+                        <a class="btn bg-dark shadowed" href="section-html.html" title="CSS la référence">
+                            En savoir plus ...
+                        </a>
+                    </p>
+                    <footer>
+                        <cite title="w3c.org">
+                            <a href="https://www.w3.org" title="W3C" target="_new">
+                                Bloc tags
+                            </a>
+                        </cite>
+                    </footer>
+                </article>
+            </section>
+
+            <section id="section-css">
+                <header>
+                    <h2>Le langage CSS</h2>
+                    <p>
+                        Le langage CSS est responsable de la forme des contenus.
+                    </p>
+                </header>
+            </section>
+        </main>
+
+        <footer class="bg-dark">
+            <nav>
+                <li>
+                    Nos réseaux sociaux
+                    <ul>
+                        <li>
+                            <a href="https://facebook.com" target="_new" title="Follow Us">
+                                <span class="icon-facebook2"></span> Facebook
+                            </a>                                
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_new" title="Follow Us">
+                                <span class="icon-twitter"></span> Twitter
+                            </a>                                
+                        </li>
+                        <li>
+                            <a href="https://linked.com" target="_new" title="Follow Us">
+                                <span class="icon-linkedin"></span> Linkedin
+                            </a>                                
+                        </li>
+                    </ul>
+                </li>
+            </nav>
+        </footer>
+    </body>
+
+</html><!-- Fin du document HTML -->
