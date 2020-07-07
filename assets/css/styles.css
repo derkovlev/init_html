@@ -41,11 +41,21 @@ nav {
     color: var(--light);
 }
 
-nav ul.flex-container{
+.flex-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+/**
+*première règle de média
+**/
+@media screen and (max-width:576px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
 /**
 * On veut définir la couleur #000 et enlever le soulignement
 *   sur tous les liens qui sont dans un LI, lui même dans un UL, lui même dans un NAV
