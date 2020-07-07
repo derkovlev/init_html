@@ -25,11 +25,11 @@
         Le contenu sera traité et affiché par le navigateur
     -->
     <body>
-        <header>
+        <header class="row">
   
-            <h1>Découvrir le HTML</h1>
+            <h1 class="col-xl-6 col-12">Découvrir le HTML</h1>
 
-            <p>
+            <p class="col-xl-6 col-12">
                 L'histoire du 
                 <!--
                     abbr avec l'attribut title pour donner la signification
@@ -38,60 +38,61 @@
                 <abbr title="Hyper Text Markup Language" class="dropdown">HTML</abbr>
                 à travers les âges
             </p>
+           
+                <nav  class="bg-dark col-12" > <!-- Element qui regroupe des balises de navigation -->
+                
+                    <!--burger menu butto :
+                            displayed only when divice width < 578px
+                    -->
+                    <button id="burger-btn">
+                        ---<br>
+                        ---<br>
+                        ---<br>
 
-            <nav class="bg-dark"><!-- Element qui regroupe des balises de navigation -->
-               
-                <!--burger menu butto :
-                        displayed only when divice width < 578px
-                -->
-                <button id="burger-btn">
-                    ---<br>
-                    ---<br>
-                    ---<br>
-
-                </button>
-                <!--
-                    Menu do not be displayed if device width <= 576px
-                -->
+                    </button>
+                    <!--
+                        Menu do not be displayed if device width <= 576px
+                    -->
 
 
-                <ul class="flex-container"><!-- Conteneur de liste-->
-                    <!-- Lien interne vers une section-->
-                    <li>
-                        <a class="btn bg-dark" href="#section-html" title="HTML la référence">
-                            <span class="icon-html-five"></span> HTML
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn bg-dark" href="#section-css" title="CSS la référence">
-                            <span class="icon-css3" ></span> CSS
-                        </a>
-                    </li>
-                    <!-- Lien externe vers un autre site -->
-                    <!-- Fermer la ligne Nos réseaux sociaux -->
+                    <ul class="flex-container"><!-- Conteneur de liste-->
+                        <!-- Lien interne vers une section-->
+                        <li>
+                            <a class="btn bg-dark" href="#section-html" title="HTML la référence">
+                                <span class="icon-html-five"></span> HTML
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn bg-dark" href="#section-css" title="CSS la référence">
+                                <span class="icon-css3" ></span> CSS
+                            </a>
+                        </li>
+                        <!-- Lien externe vers un autre site -->
+                        <!-- Fermer la ligne Nos réseaux sociaux -->
 
-                    <!-- Lien de type téléphone /!\ never this way -->
-                    <li>
-                        <a class="btn bg-dark" href="tel:0522336699" title="Click to call">
-                            Appelez nous
-                        </a>
-                    </li>
+                        <!-- Lien de type téléphone /!\ never this way -->
+                        <li>
+                            <a class="btn bg-dark" href="tel:0522336699" title="Click to call">
+                                Appelez nous
+                            </a>
+                        </li>
 
-                    <!-- Lien de type mail /!\ never this way -->
-                    <li>
-                        <a 
-                           class="btn bg-dark" href="mailto:toto@tartempion.com?subject=Contact us" 
-                            title="Send an email"
-                        >
-                            Mail
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                        <!-- Lien de type mail /!\ never this way -->
+                        <li>
+                            <a 
+                            class="btn bg-dark" href="mailto:toto@tartempion.com?subject=Contact us" 
+                                title="Send an email"
+                            >
+                                Mail
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
         </header>
         
-        <main class="row"><!-- Contenu principal d'une page / unique dans un document -->
-            <section id="section-html" class="col-6">
+        <main class="row"> <!-- Contenu principal d'une page / unique dans un document -->
+            <section id="section-html" class="col-xl-6 col-12">
                 <header>
                     <h2>Le langage HTML</h2>
                     <p>
@@ -122,7 +123,7 @@
                 </article>
             </section>
 
-            <section id="section-css" class="col-6">
+            <section id="section-css" class="col-xl-6 col-12">
                 <header>
                     <h2>Le langage CSS</h2>
                     <p>
