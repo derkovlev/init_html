@@ -47,6 +47,9 @@ nav {
     justify-content: center;
 }
 
+#burger-btn{
+    display: none;
+}
 /**
 *première règle de média
 **/
@@ -54,6 +57,12 @@ nav {
     .flex-container{
         flex-direction: column;
     }
+
+    #burger-btn{
+        display: block;
+        
+    }
+
 }
 
 /**
