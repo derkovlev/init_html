@@ -1,0 +1,33 @@
+/**
+Form and field design
+**/
+
+.required::after { /** Pseudo-element => ::pseudo**/
+    content: "(*)";
+    color: red;
+}
+
+
+/**
+*input design
+**/
+
+input{
+ border-radius: 0.3em;
+ padding: 0.5em;
+ border: solid 1px rgb(128, 128, 128)
+}
+
+form div button{
+    background-color: var(--success);
+    color: var(--light);
+    border-radius: 0.3em;
+    border: none;
+}
+
+form div button:hover{
+    background-color: #227236; 
+    border-radius: 0.3;
+    color: var(--light);
+    border: none;
+}
