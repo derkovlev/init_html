@@ -164,22 +164,26 @@
         <!--Template pour l'affichage du formulaire de contact-->
         <!--<template id="form-template">-->
             <!--form c'est un ensemble de champs (ou contrôle de formulaire)-->
-            <form>
-                <h2>Contactez le service client</h2>
-                <div>
-                    <input type="text" name="name-ctrl" id="name-ctrl" placeholder="Votre nom..." required>
+            <div class="outer-modal">
+                <div class="inner-modal">
+                    <h2>Contactez le service client</h2>
+                    <form>                  
+                        <div>
+                            <input type="text" name="name-ctrl" id="name-ctrl" placeholder="Votre nom..." required>
+                        </div>
+                        <div>
+                            <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email...(*)" required>
+                        </div>
+                        <div>
+                            <label class="required">Objet de votre demande :</label>
+                            <textarea name="objet-ctrl" id="objet-ctrl"></textarea>
+                        </div>
+                        <div>
+                            <button id="send-ctrl" type="submit"> Envoyer</button>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email...(*)" required>
-                </div>
-                <div>
-                    <label class="required">Objet de votre demande :</label>
-                    <textarea name="objet-ctrl" id="objet-ctrl"></textarea>
-                </div>
-                <div>
-                    <button id="send-ctrl" type="submit"> Envoyer</button>
-                </div>
-            </form>
+            </div>
         <!--</template>-->
 
         <!--Fin du template pour l'affichage du formulaire de contact-->
