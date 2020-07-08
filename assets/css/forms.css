@@ -19,15 +19,23 @@ input{
 }
 
 form div button{
-    background-color: var(--success);
     color: var(--light);
     border-radius: 0.3em;
     border: none;
 }
 
-form div button:hover{
-    background-color: #227236; 
-    border-radius: 0.3;
-    color: var(--light);
-    border: none;
+form div button#send-ctrl{
+    background-color: var(--success);
+}
+
+form div button#send-ctrl:hover{
+    background-color: #227236;
+}
+
+form div button#close-ctrl{
+    background-color: var(--dark);
+}
+
+form div button#close-ctrl:hover{
+    background-color: var(--secondary);
 }

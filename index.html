@@ -81,8 +81,9 @@
                         <!-- Lien de type mail /!\ never this way -->
                         <li>
                             <a 
-                            class="btn bg-dark" href="mailto:toto@tartempion.com?subject=Contact us" 
+                                class="btn bg-dark" href="#" 
                                 title="Send an email"
+                                onclick="openModal()"
                             >
                                 Mail
                             </a>
@@ -162,7 +163,7 @@
             </footer>
         </div>
         <!--Template pour l'affichage du formulaire de contact-->
-        <!--<template id="form-template">-->
+        <template id="form-template">
             <!--form c'est un ensemble de champs (ou contrôle de formulaire)-->
             <div class="outer-modal">
                 <div class="inner-modal">
@@ -179,14 +180,16 @@
                             <textarea name="objet-ctrl" id="objet-ctrl"></textarea>
                         </div>
                         <div>
-                            <button id="send-ctrl" type="submit"> Envoyer</button>
+                            <button id="send-ctrl" type="submit" onclick="sendAndClose()" > Envoyer</button>
+                            <button id="close-ctrl" type="button" onclick="closeModal()">Annuler</button>
                         </div>
                     </form>
                 </div>
             </div>
-        <!--</template>-->
+        </template>
+        <script src="assets/js/modal.js"></script>
 
         <!--Fin du template pour l'affichage du formulaire de contact-->
     </body>
-
+   
 </html><!-- Fin du document HTML -->
