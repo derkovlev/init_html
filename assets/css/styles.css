@@ -82,12 +82,13 @@ nav ul li a {
     transform: rotate(0deg);
     text-decoration: none;
     color: inherit;
+    text-align: center;
 }
 
 
 
 header nav ul li{
-    width: 10em;
+    width: 8em;
     margin-right: 0.5em;
 }
 
@@ -131,7 +132,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-right: 0.5em;
     padding-top: 1em;
     padding-bottom: 1em;*/
-    padding: 1em 0.5em 1em 0.5em;
+    
 }
 
 .bg-light {
