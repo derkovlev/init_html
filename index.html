@@ -1,193 +1,199 @@
 <!doctype html>
 
 <html>
-    <!-- Elément head : instructions envoyées au navigateur -->
-    <head>
-        <meta charset="utf-8">
-        <!--Définition des règles de média-->
-        <meta 
-            name="viewport"
-            content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
-        >
-        <title>Découvrir le HTML</title>
-        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css"rel="stylesheet" >
-        <link href="./assets/css/styles.css" rel="stylesheet">
+<!-- Elément head : instructions envoyées au navigateur -->
 
-        <!--load icomoon styles-->
-        <link href="./assets/css/style.css" rel="stylesheet">
-        <link href="./assets/css/forms.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <!--Définition des règles de média-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Découvrir le HTML</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
 
-    </head>
+    <!--load icomoon styles-->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/forms.css" rel="stylesheet">
 
-    <!--
+</head>
+
+<!--
         Element body : contenu visible dans la fenêtre du navigateur
         Le contenu sera traité et affiché par le navigateur
     -->
-    <body>
-        <header class="row">
-  
-            <h1 class="col-xl-8 col-12">Découvrir le HTML</h1>
 
-            <p class="col-xl-4 col-12">
-                L'histoire du 
-                <!--
+<body>
+    <header class="row">
+
+        <h1 class="col-xl-8 col-12">Découvrir le HTML</h1>
+
+        <p class="col-xl-4 col-12">
+            L'histoire du
+            <!--
                     abbr avec l'attribut title pour donner la signification
                     de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language)
                 -->
-                <abbr title="Hyper Text Markup Language" class="dropdown">HTML</abbr>
-                à travers les âges
-            </p>
-           
-                <nav  class="bg-dark col-12" > <!-- Element qui regroupe des balises de navigation -->
-                
-                    <!--burger menu butto :
+            <abbr title="Hyper Text Markup Language" class="dropdown">HTML</abbr>
+            à travers les âges
+        </p>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+            <!-- Element qui regroupe des balises de navigation -->
+
+            <!--burger menu butto :
                             displayed only when divice width < 578px
                     -->
-                    <button id="burger-btn">
-                        ---<br>
-                        ---<br>
-                        ---<br>
-
-                    </button>
-                    <!--
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--
                         Menu do not be displayed if device width <= 576px
                     -->
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Conteneur de liste-->
+                    <!-- Lien interne vers une section-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#section-html" title="HTML la référence">
+                            <span class="icon-html-five"></span> HTML
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#section-css" title="CSS la référence">
+                            <span class="icon-css3"></span> CSS
+                        </a>
+                    </li>
+                    <!-- Lien externe vers un autre site -->
+                    <!-- Fermer la ligne Nos réseaux sociaux -->
 
-                    <ul class="flex-container"><!-- Conteneur de liste-->
-                        <!-- Lien interne vers une section-->
+                    <!-- Lien de type téléphone /!\ never this way -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="tel:0522336699" title="Click to call">
+                            Appelez nous
+                        </a>
+                    </li>
+
+                    <!-- Lien de type mail /!\ never this way -->
+                    <li class="nav-item active">
+                        <a 
+                        class="nav-link" href="#" 
+                        title="Send an email"
+                        onclick="openModal()"
+                        >
+                        Mail
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="row">
+        <!-- Contenu principal d'une page / unique dans un document -->
+        <section id="section-html" class="col-xl-6 col-12">
+            <header>
+                <h2>
+                    Le langage HTML
+                </h2>
+                <p>
+                    Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
+                    <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
+
+                </p>
+            </header>
+
+            <article>
+                <header>
+                    <h3>Deux familles de balises HTML</h3>
+                </header>
+                <p>
+                    Les <span>balises bloc</span> définissent un rectangle occupant
+                    la totalité de la largeur disponible dans le navigateur. <br>
+                    <a class="btn bg-dark shadowed" href="section-html.html" title="CSS la référence">
+                        En savoir plus ...
+                    </a>
+                </p>
+                <footer>
+                    <cite title="w3c.org">
+                        <a href="https://www.w3.org" title="W3C" target="_new">
+                            Bloc tags
+                        </a>
+                    </cite>
+                </footer>
+            </article>
+        </section>
+
+        <section id="section-css" class="col-xl-6 col-12">
+            <header>
+                <h2>Le langage CSS</h2>
+                <p>
+                    Le langage CSS est responsable de la forme des contenus.
+                </p>
+            </header>
+        </section>
+    </main>
+    <div>
+        <footer class="bg-dark">
+            <nav>
+                <li>
+                    Nos réseaux sociaux
+                    <ul>
                         <li>
-                            <a class="btn bg-dark" href="#section-html" title="HTML la référence">
-                                <span class="icon-html-five"></span> HTML
+                            <a href="https://facebook.com" target="_new" title="Follow Us">
+                                <span class="icon-facebook2"></span> Facebook
                             </a>
                         </li>
                         <li>
-                            <a class="btn bg-dark" href="#section-css" title="CSS la référence">
-                                <span class="icon-css3" ></span> CSS
+                            <a href="https://twitter.com" target="_new" title="Follow Us">
+                                <span class="icon-twitter"></span> Twitter
                             </a>
                         </li>
-                        <!-- Lien externe vers un autre site -->
-                        <!-- Fermer la ligne Nos réseaux sociaux -->
-
-                        <!-- Lien de type téléphone /!\ never this way -->
                         <li>
-                            <a class="btn bg-dark" href="tel:0522336699" title="Click to call">
-                                Appelez nous
-                            </a>
-                        </li>
-
-                        <!-- Lien de type mail /!\ never this way -->
-                        <li>
-                            <a 
-                                class="btn bg-dark" href="#" 
-                                title="Send an email"
-                                onclick="openModal()"
-                            >
-                                Mail
+                            <a href="https://linked.com" target="_new" title="Follow Us">
+                                <span class="icon-linkedin"></span> Linkedin
                             </a>
                         </li>
                     </ul>
-                </nav>
-                
-        </header>
-        
-        <main class="row"> <!-- Contenu principal d'une page / unique dans un document -->
-            <section id="section-html" class="col-xl-6 col-12">
-                <header>
-                    <h2>
-                        Le langage HTML
-                    </h2>
-                    <p>
-                        Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
-                        <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
-                        
-                    </p>
-                </header>
-
-                <article>
-                    <header>
-                        <h3>Deux familles de balises HTML</h3>
-                    </header>
-                    <p>
-                        Les <span>balises bloc</span> définissent un rectangle occupant
-                        la totalité de la largeur disponible dans le navigateur. <br>
-                        <a class="btn bg-dark shadowed" href="section-html.html" title="CSS la référence">
-                            En savoir plus ...
-                        </a>
-                    </p>
-                    <footer>
-                        <cite title="w3c.org">
-                            <a href="https://www.w3.org" title="W3C" target="_new">
-                                Bloc tags
-                            </a>
-                        </cite>
-                    </footer>
-                </article>
-            </section>
-
-            <section id="section-css" class="col-xl-6 col-12">
-                <header>
-                    <h2>Le langage CSS</h2>
-                    <p>
-                        Le langage CSS est responsable de la forme des contenus.
-                    </p>
-                </header>
-            </section>
-        </main>
-        <div>
-            <footer class="bg-dark">
-                <nav>
-                    <li>
-                        Nos réseaux sociaux
-                        <ul>
-                            <li>
-                                <a href="https://facebook.com" target="_new" title="Follow Us">
-                                    <span class="icon-facebook2"></span> Facebook
-                                </a>                                
-                            </li>
-                            <li>
-                                <a href="https://twitter.com" target="_new" title="Follow Us">
-                                    <span class="icon-twitter"></span> Twitter
-                                </a>                                
-                            </li>
-                            <li>
-                                <a href="https://linked.com" target="_new" title="Follow Us">
-                                    <span class="icon-linkedin"></span> Linkedin
-                                </a>                                
-                            </li>
-                        </ul>
-                    </li>
-                </nav>
-            </footer>
-        </div>
-        <!--Template pour l'affichage du formulaire de contact-->
-        <template id="form-template">
-            <!--form c'est un ensemble de champs (ou contrôle de formulaire)-->
-            <div class="outer-modal">
-                <div class="inner-modal">
-                    <h2>Contactez le service client</h2>
-                    <form>                  
-                        <div>
-                            <input type="text" name="name-ctrl" id="name-ctrl" placeholder="Votre nom..." required>
-                        </div>
-                        <div>
-                            <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email...(*)" required>
-                        </div>
-                        <div>
-                            <label class="required">Objet de votre demande :</label>
-                            <textarea name="objet-ctrl" id="objet-ctrl"></textarea>
-                        </div>
-                        <div>
-                            <button id="send-ctrl" type="submit" onclick="sendAndClose()" > Envoyer</button>
-                            <button id="close-ctrl" type="button" onclick="closeModal()">Annuler</button>
-                        </div>
-                    </form>
-                </div>
+                </li>
+            </nav>
+        </footer>
+    </div>
+    <!--Template pour l'affichage du formulaire de contact-->
+    <!--<template id="form-template">-->
+    <!--form c'est un ensemble de champs (ou contrôle de formulaire)-->
+    <template id="form-template">
+        <!--form c'est un ensemble de champs (ou contrôle de formulaire)-->
+        <div class="outer-modal">
+            <div class="inner-modal">
+                <h2>Contactez le service client</h2>
+                <form>                  
+                    <div>
+                        <input type="text" name="name-ctrl" id="name-ctrl" placeholder="Votre nom..." required>
+                    </div>
+                    <div>
+                        <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email...(*)" required>
+                    </div>
+                    <div>
+                        <label class="required">Objet de votre demande :</label>
+                        <textarea name="objet-ctrl" id="objet-ctrl"></textarea>
+                    </div>
+                    <div>
+                        <button id="send-ctrl" type="submit" onclick="sendAndClose()" > Envoyer</button>
+                        <button id="close-ctrl" type="button" onclick="closeModal()">Annuler</button>
+                    </div>
+                </form>
             </div>
-        </template>
-        <script src="assets/js/modal.js"></script>
+        </div>
+    </template>
+    <!--</template>-->
+    <script src="./node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <!--Fin du template pour l'affichage du formulaire de contact-->
+</body>
 
-        <!--Fin du template pour l'affichage du formulaire de contact-->
-    </body>
-   
 </html><!-- Fin du document HTML -->

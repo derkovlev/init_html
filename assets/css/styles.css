@@ -105,7 +105,7 @@ nav ul li a.btn:hover { /** Etat final c'est ici **/
     transform: rotate(360deg);
 }
 
-abbr {
+abbr.dropdown {
     text-decoration: none;
     font-weight: bold;
 }
@@ -117,6 +117,9 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--title-color);
 }
 
+nav.bg-dark{
+    background-color: var(--secondary)!important;
+}
 /**
 * Sélecteurs "class"
 **/
